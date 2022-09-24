@@ -1,0 +1,89 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;    
+}
+
+main{
+display:flex;   
+}
+
+.card1, .card2, .card3{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    padding:50px;
+    width:19rem;
+    height:31rem;
+}
+
+img{
+    width:40%;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size:2.2rem;
+    color:white;
+}
+
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family:"lexend deca";
+    font-size:15px;
+    line-height:1.5rem;
+}
+
+button{
+    margin-top:3.5rem;
+    height:3rem;
+    width:10rem;
+    border:none;
+    border-radius:30px;
+    font-weight:bold;
+    font-family:"lexend deca";
+}
+
+.card1{
+    
+    background-color:hsl(31, 77%, 52%);
+    border-radius:10px 0px 0px 10px;
+}
+
+.card1 button{
+    color:hsl(31, 77%, 52%);
+}
+
+
+.card2{
+    background-color:hsl(184, 100%, 22%);
+}
+
+.card2 button{
+    color:hsl(184, 100%, 22%);
+}
+
+.card3{
+    background-color:hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.card3 button{
+    color:hsl(179, 100%, 13%);
+}
+
+@media (max-width:380px){
+    main{
+        flex-wrap:wrap;
+        height:100%;
+        justify-content:center;   
+    }
+    
+}
